@@ -1,0 +1,661 @@
+[2026-08-13 03:46:29 ATTN_CP5 TP5] Prefill batch, #new-seq: 1, #new-token: 10304, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1563.90
+11:46:29
+[2026-08-13 03:46:29 ATTN_CP2 TP2] Prefill batch, #new-seq: 1, #new-token: 10304, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1563.91
+11:46:29
+[2026-08-13 03:46:29 ATTN_CP3 TP3] Prefill batch, #new-seq: 1, #new-token: 10304, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1563.91
+11:46:29
+[2026-08-13 03:46:29 ATTN_CP6 TP6] Prefill batch, #new-seq: 1, #new-token: 10304, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1563.91
+11:46:29
+[2026-08-13 03:46:29 ATTN_CP1 TP1] Prefill batch, #new-seq: 1, #new-token: 10304, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1563.92
+11:46:29
+[2026-08-13 03:46:29 ATTN_CP7 TP7] Prefill batch, #new-seq: 1, #new-token: 10304, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1563.89
+11:46:29
+[2026-08-13 03:46:29 ATTN_CP4 TP4] Prefill batch, #new-seq: 1, #new-token: 10304, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1563.86
+11:46:29
+[2026-08-13 03:46:29 ATTN_CP0 TP0] Prefill batch, #new-seq: 1, #new-token: 10304, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1563.86
+11:46:29
+[2026-08-13 03:46:29] INFO:     172.28.90.46:52178 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:29
+[2026-08-13 03:46:29 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 15616, #cached-token: 0, token usage: 0.13, #running-req: 1, #queue-req: 7, #pending-token: 219351, cuda graph: False, input throughput (token/s): 23969.49
+11:46:29
+[2026-08-13 03:46:29 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 15616, #cached-token: 0, token usage: 0.13, #running-req: 1, #queue-req: 7, #pending-token: 219351, cuda graph: False, input throughput (token/s): 23968.73
+11:46:29
+[2026-08-13 03:46:29 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 15616, #cached-token: 0, token usage: 0.13, #running-req: 1, #queue-req: 7, #pending-token: 219351, cuda graph: False, input throughput (token/s): 23969.31
+11:46:29
+[2026-08-13 03:46:29 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 15616, #cached-token: 0, token usage: 0.13, #running-req: 1, #queue-req: 7, #pending-token: 219351, cuda graph: False, input throughput (token/s): 23973.89
+11:46:29
+[2026-08-13 03:46:29 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 15616, #cached-token: 0, token usage: 0.13, #running-req: 1, #queue-req: 7, #pending-token: 219351, cuda graph: False, input throughput (token/s): 23966.32
+11:46:29
+[2026-08-13 03:46:29 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 15616, #cached-token: 0, token usage: 0.13, #running-req: 1, #queue-req: 7, #pending-token: 219351, cuda graph: False, input throughput (token/s): 23966.76
+11:46:29
+[2026-08-13 03:46:29 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 15616, #cached-token: 0, token usage: 0.13, #running-req: 1, #queue-req: 7, #pending-token: 219351, cuda graph: False, input throughput (token/s): 23963.62
+11:46:29
+[2026-08-13 03:46:29 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 15616, #cached-token: 0, token usage: 0.13, #running-req: 1, #queue-req: 7, #pending-token: 219351, cuda graph: False, input throughput (token/s): 23968.07
+11:46:29
+[2026-08-13 03:46:29] INFO:     172.28.90.46:41840 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:29
+[2026-08-13 03:46:29] INFO:     172.28.90.46:41780 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 6, #pending-token: 203028, cuda graph: False, input throughput (token/s): 24172.81
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 6, #pending-token: 203028, cuda graph: False, input throughput (token/s): 24174.00
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 6, #pending-token: 203028, cuda graph: False, input throughput (token/s): 24173.18
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 6, #pending-token: 203028, cuda graph: False, input throughput (token/s): 24175.31
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 6, #pending-token: 203028, cuda graph: False, input throughput (token/s): 24177.74
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 6, #pending-token: 203028, cuda graph: False, input throughput (token/s): 24174.51
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 6, #pending-token: 203028, cuda graph: False, input throughput (token/s): 24172.70
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 6, #pending-token: 203028, cuda graph: False, input throughput (token/s): 24174.11
+11:46:30
+[2026-08-13 03:46:30] INFO:     172.28.90.46:41864 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 13440, #cached-token: 0, token usage: 0.22, #running-req: 4, #queue-req: 4, #pending-token: 189644, cuda graph: False, input throughput (token/s): 23407.78
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 13440, #cached-token: 0, token usage: 0.22, #running-req: 4, #queue-req: 4, #pending-token: 189644, cuda graph: False, input throughput (token/s): 23406.89
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 13440, #cached-token: 0, token usage: 0.22, #running-req: 4, #queue-req: 4, #pending-token: 189644, cuda graph: False, input throughput (token/s): 23406.77
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 13440, #cached-token: 0, token usage: 0.22, #running-req: 4, #queue-req: 4, #pending-token: 189644, cuda graph: False, input throughput (token/s): 23406.58
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 13440, #cached-token: 0, token usage: 0.22, #running-req: 4, #queue-req: 4, #pending-token: 189644, cuda graph: False, input throughput (token/s): 23406.04
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 13440, #cached-token: 0, token usage: 0.22, #running-req: 4, #queue-req: 4, #pending-token: 189644, cuda graph: False, input throughput (token/s): 23405.18
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 13440, #cached-token: 0, token usage: 0.22, #running-req: 4, #queue-req: 4, #pending-token: 189644, cuda graph: False, input throughput (token/s): 23404.76
+11:46:30
+[2026-08-13 03:46:30 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 13440, #cached-token: 0, token usage: 0.22, #running-req: 4, #queue-req: 4, #pending-token: 189644, cuda graph: False, input throughput (token/s): 23404.65
+11:46:30
+[2026-08-13 03:46:30] INFO:     172.28.90.46:41856 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:30
+[2026-08-13 03:46:30] INFO:     172.28.90.46:41850 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:31
+[2026-08-13 03:46:31 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 173308, cuda graph: False, input throughput (token/s): 24131.84
+11:46:31
+[2026-08-13 03:46:31 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 173308, cuda graph: False, input throughput (token/s): 24132.66
+11:46:31
+[2026-08-13 03:46:31 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 173308, cuda graph: False, input throughput (token/s): 24132.98
+11:46:31
+[2026-08-13 03:46:31 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 173308, cuda graph: False, input throughput (token/s): 24133.87
+11:46:31
+[2026-08-13 03:46:31 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 173308, cuda graph: False, input throughput (token/s): 24133.92
+11:46:31
+[2026-08-13 03:46:31 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 173308, cuda graph: False, input throughput (token/s): 24133.83
+11:46:31
+[2026-08-13 03:46:31 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 173308, cuda graph: False, input throughput (token/s): 24132.90
+11:46:31
+[2026-08-13 03:46:31 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 173308, cuda graph: False, input throughput (token/s): 24134.65
+11:46:31
+[2026-08-13 03:46:31] INFO:     172.28.90.46:41814 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP5 TP5] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 156924, cuda graph: False, input throughput (token/s): 24111.32
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP6 TP6] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 156924, cuda graph: False, input throughput (token/s): 24111.60
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP7 TP7] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 156924, cuda graph: False, input throughput (token/s): 24111.53
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP1 TP1] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 156924, cuda graph: False, input throughput (token/s): 24111.08
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP2 TP2] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 156924, cuda graph: False, input throughput (token/s): 24111.44
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP3 TP3] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 156924, cuda graph: False, input throughput (token/s): 24111.49
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP4 TP4] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 156924, cuda graph: False, input throughput (token/s): 24106.28
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP0 TP0] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 156924, cuda graph: False, input throughput (token/s): 24115.46
+11:46:32
+[2026-08-13 03:46:32] INFO:     172.28.90.46:40390 - "GET /health HTTP/1.1" 200 OK
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 140558, cuda graph: False, input throughput (token/s): 23876.20
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 140558, cuda graph: False, input throughput (token/s): 23875.59
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 140558, cuda graph: False, input throughput (token/s): 23875.94
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 140558, cuda graph: False, input throughput (token/s): 23879.35
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 140558, cuda graph: False, input throughput (token/s): 23873.91
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 140558, cuda graph: False, input throughput (token/s): 23872.59
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 140558, cuda graph: False, input throughput (token/s): 23872.21
+11:46:32
+[2026-08-13 03:46:32 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 140558, cuda graph: False, input throughput (token/s): 23869.12
+11:46:32
+[2026-08-13 03:46:32] INFO:     172.28.90.46:41782 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:33
+[2026-08-13 03:46:33 ATTN_CP5 TP5] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 124174, cuda graph: False, input throughput (token/s): 23882.71
+11:46:33
+[2026-08-13 03:46:33 ATTN_CP6 TP6] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 124174, cuda graph: False, input throughput (token/s): 23882.11
+11:46:33
+[2026-08-13 03:46:33 ATTN_CP7 TP7] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 124174, cuda graph: False, input throughput (token/s): 23882.59
+11:46:33
+[2026-08-13 03:46:33 ATTN_CP4 TP4] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 124174, cuda graph: False, input throughput (token/s): 23883.22
+11:46:33
+[2026-08-13 03:46:33 ATTN_CP1 TP1] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 124174, cuda graph: False, input throughput (token/s): 23885.17
+11:46:33
+[2026-08-13 03:46:33 ATTN_CP3 TP3] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 124174, cuda graph: False, input throughput (token/s): 23883.75
+11:46:33
+[2026-08-13 03:46:33 ATTN_CP2 TP2] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 124174, cuda graph: False, input throughput (token/s): 23885.75
+11:46:33
+[2026-08-13 03:46:33 ATTN_CP0 TP0] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 124174, cuda graph: False, input throughput (token/s): 23889.42
+11:46:34
+[2026-08-13 03:46:34 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 1, #pending-token: 107849, cuda graph: False, input throughput (token/s): 23860.65
+11:46:34
+[2026-08-13 03:46:34 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 1, #pending-token: 107849, cuda graph: False, input throughput (token/s): 23860.21
+11:46:34
+[2026-08-13 03:46:34 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 1, #pending-token: 107849, cuda graph: False, input throughput (token/s): 23860.08
+11:46:34
+[2026-08-13 03:46:34 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 1, #pending-token: 107849, cuda graph: False, input throughput (token/s): 23860.57
+11:46:34
+[2026-08-13 03:46:34 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 1, #pending-token: 107849, cuda graph: False, input throughput (token/s): 23859.86
+11:46:34
+[2026-08-13 03:46:34 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 1, #pending-token: 107849, cuda graph: False, input throughput (token/s): 23859.99
+11:46:34
+[2026-08-13 03:46:34 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 1, #pending-token: 107849, cuda graph: False, input throughput (token/s): 23859.45
+11:46:34
+[2026-08-13 03:46:34 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 1, #pending-token: 107849, cuda graph: False, input throughput (token/s): 23854.51
+11:46:34
+[2026-08-13 03:46:34] INFO:     172.28.90.46:41828 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:35
+[2026-08-13 03:46:35 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 91509, cuda graph: False, input throughput (token/s): 23775.96
+11:46:35
+[2026-08-13 03:46:35 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 91509, cuda graph: False, input throughput (token/s): 23775.98
+11:46:35
+[2026-08-13 03:46:35 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 91509, cuda graph: False, input throughput (token/s): 23776.46
+11:46:35
+[2026-08-13 03:46:35 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 91509, cuda graph: False, input throughput (token/s): 23775.25
+11:46:35
+[2026-08-13 03:46:35 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 91509, cuda graph: False, input throughput (token/s): 23776.95
+11:46:35
+[2026-08-13 03:46:35 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 91509, cuda graph: False, input throughput (token/s): 23775.95
+11:46:35
+[2026-08-13 03:46:35 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 91509, cuda graph: False, input throughput (token/s): 23775.44
+11:46:35
+[2026-08-13 03:46:35 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 91509, cuda graph: False, input throughput (token/s): 23777.33
+11:46:35
+[2026-08-13 03:46:35] INFO:     172.28.90.46:41798 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:36
+[2026-08-13 03:46:36 ATTN_CP5 TP5] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.66, #running-req: 10, #queue-req: 0, #pending-token: 58741, cuda graph: False, input throughput (token/s): 24645.33
+11:46:36
+[2026-08-13 03:46:36 ATTN_CP6 TP6] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.66, #running-req: 10, #queue-req: 0, #pending-token: 58741, cuda graph: False, input throughput (token/s): 24644.82
+11:46:36
+[2026-08-13 03:46:36 ATTN_CP4 TP4] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.66, #running-req: 10, #queue-req: 0, #pending-token: 58741, cuda graph: False, input throughput (token/s): 24645.67
+11:46:36
+[2026-08-13 03:46:36 ATTN_CP7 TP7] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.66, #running-req: 10, #queue-req: 0, #pending-token: 58741, cuda graph: False, input throughput (token/s): 24644.64
+11:46:36
+[2026-08-13 03:46:36 ATTN_CP1 TP1] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.66, #running-req: 10, #queue-req: 0, #pending-token: 58741, cuda graph: False, input throughput (token/s): 24645.64
+11:46:36
+[2026-08-13 03:46:36 ATTN_CP3 TP3] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.66, #running-req: 10, #queue-req: 0, #pending-token: 58741, cuda graph: False, input throughput (token/s): 24645.82
+11:46:36
+[2026-08-13 03:46:36 ATTN_CP2 TP2] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.66, #running-req: 10, #queue-req: 0, #pending-token: 58741, cuda graph: False, input throughput (token/s): 24645.07
+11:46:36
+[2026-08-13 03:46:36 ATTN_CP0 TP0] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.66, #running-req: 10, #queue-req: 0, #pending-token: 58741, cuda graph: False, input throughput (token/s): 24647.31
+11:46:37
+[2026-08-13 03:46:37 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.74, #running-req: 10, #queue-req: 0, #pending-token: 26035, cuda graph: False, input throughput (token/s): 24542.79
+11:46:37
+[2026-08-13 03:46:37 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.74, #running-req: 10, #queue-req: 0, #pending-token: 26035, cuda graph: False, input throughput (token/s): 24542.42
+11:46:37
+[2026-08-13 03:46:37 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.74, #running-req: 10, #queue-req: 0, #pending-token: 26035, cuda graph: False, input throughput (token/s): 24542.83
+11:46:37
+[2026-08-13 03:46:37 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.74, #running-req: 10, #queue-req: 0, #pending-token: 26035, cuda graph: False, input throughput (token/s): 24542.59
+11:46:37
+[2026-08-13 03:46:37 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.74, #running-req: 10, #queue-req: 0, #pending-token: 26035, cuda graph: False, input throughput (token/s): 24542.75
+11:46:37
+[2026-08-13 03:46:37 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.74, #running-req: 10, #queue-req: 0, #pending-token: 26035, cuda graph: False, input throughput (token/s): 24541.90
+11:46:37
+[2026-08-13 03:46:37 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.74, #running-req: 10, #queue-req: 0, #pending-token: 26035, cuda graph: False, input throughput (token/s): 24541.88
+11:46:37
+[2026-08-13 03:46:37 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.74, #running-req: 10, #queue-req: 0, #pending-token: 26035, cuda graph: False, input throughput (token/s): 24540.18
+11:46:37
+[2026-08-13 03:46:37] INFO:     172.28.90.46:41872 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:37
+[2026-08-13 03:46:37] INFO:     172.28.90.46:40390 - "GET /health HTTP/1.1" 200 OK
+11:46:38
+[2026-08-13 03:46:38 ATTN_CP4 TP4] Prefill batch, #new-seq: 1, #new-token: 26048, #cached-token: 0, token usage: 0.74, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23847.68
+11:46:38
+[2026-08-13 03:46:38 ATTN_CP7 TP7] Prefill batch, #new-seq: 1, #new-token: 26048, #cached-token: 0, token usage: 0.74, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23847.16
+11:46:38
+[2026-08-13 03:46:38 ATTN_CP5 TP5] Prefill batch, #new-seq: 1, #new-token: 26048, #cached-token: 0, token usage: 0.74, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23846.67
+11:46:38
+[2026-08-13 03:46:38 ATTN_CP6 TP6] Prefill batch, #new-seq: 1, #new-token: 26048, #cached-token: 0, token usage: 0.74, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23846.68
+11:46:38
+[2026-08-13 03:46:38 ATTN_CP1 TP1] Prefill batch, #new-seq: 1, #new-token: 26048, #cached-token: 0, token usage: 0.74, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23846.43
+11:46:38
+[2026-08-13 03:46:38 ATTN_CP2 TP2] Prefill batch, #new-seq: 1, #new-token: 26048, #cached-token: 0, token usage: 0.74, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23846.53
+11:46:38
+[2026-08-13 03:46:38 ATTN_CP3 TP3] Prefill batch, #new-seq: 1, #new-token: 26048, #cached-token: 0, token usage: 0.74, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23847.18
+11:46:38
+[2026-08-13 03:46:38 ATTN_CP0 TP0] Prefill batch, #new-seq: 1, #new-token: 26048, #cached-token: 0, token usage: 0.74, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23851.04
+11:46:38
+[2026-08-13 03:46:38] INFO:     172.28.90.46:41838 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:39
+[2026-08-13 03:46:39 ATTN_CP1 TP1] Decode batch, #running-req: 12, #token: 245632, token usage: 0.74, cuda graph: True, gen throughput (token/s): 94.95, #queue-req: 0
+11:46:39
+[2026-08-13 03:46:39 ATTN_CP5 TP5] Decode batch, #running-req: 12, #token: 245632, token usage: 0.74, cuda graph: True, gen throughput (token/s): 94.95, #queue-req: 0
+11:46:39
+[2026-08-13 03:46:39 ATTN_CP6 TP6] Decode batch, #running-req: 12, #token: 245632, token usage: 0.74, cuda graph: True, gen throughput (token/s): 94.95, #queue-req: 0
+11:46:39
+[2026-08-13 03:46:39 ATTN_CP7 TP7] Decode batch, #running-req: 12, #token: 245632, token usage: 0.74, cuda graph: True, gen throughput (token/s): 94.95, #queue-req: 0
+11:46:39
+[2026-08-13 03:46:39 ATTN_CP4 TP4] Decode batch, #running-req: 12, #token: 245632, token usage: 0.74, cuda graph: True, gen throughput (token/s): 94.95, #queue-req: 0
+11:46:39
+[2026-08-13 03:46:39 ATTN_CP3 TP3] Decode batch, #running-req: 12, #token: 245632, token usage: 0.74, cuda graph: True, gen throughput (token/s): 94.95, #queue-req: 0
+11:46:39
+[2026-08-13 03:46:39 ATTN_CP2 TP2] Decode batch, #running-req: 12, #token: 245632, token usage: 0.74, cuda graph: True, gen throughput (token/s): 94.95, #queue-req: 0
+11:46:39
+[2026-08-13 03:46:39 ATTN_CP0 TP0] Decode batch, #running-req: 12, #token: 245632, token usage: 0.74, cuda graph: True, gen throughput (token/s): 94.95, #queue-req: 0
+11:46:41
+[2026-08-13 03:46:41 ATTN_CP4 TP4] Decode batch, #running-req: 12, #token: 246912, token usage: 0.75, cuda graph: True, gen throughput (token/s): 503.60, #queue-req: 0
+11:46:41
+[2026-08-13 03:46:41 ATTN_CP5 TP5] Decode batch, #running-req: 12, #token: 246912, token usage: 0.75, cuda graph: True, gen throughput (token/s): 503.60, #queue-req: 0
+11:46:41
+[2026-08-13 03:46:41 ATTN_CP7 TP7] Decode batch, #running-req: 12, #token: 246912, token usage: 0.75, cuda graph: True, gen throughput (token/s): 503.60, #queue-req: 0
+11:46:41
+[2026-08-13 03:46:41 ATTN_CP1 TP1] Decode batch, #running-req: 12, #token: 246912, token usage: 0.75, cuda graph: True, gen throughput (token/s): 503.60, #queue-req: 0
+11:46:41
+[2026-08-13 03:46:41 ATTN_CP3 TP3] Decode batch, #running-req: 12, #token: 246912, token usage: 0.75, cuda graph: True, gen throughput (token/s): 503.60, #queue-req: 0
+11:46:41
+[2026-08-13 03:46:41 ATTN_CP2 TP2] Decode batch, #running-req: 12, #token: 246912, token usage: 0.75, cuda graph: True, gen throughput (token/s): 503.60, #queue-req: 0
+11:46:41
+[2026-08-13 03:46:41 ATTN_CP6 TP6] Decode batch, #running-req: 12, #token: 246912, token usage: 0.75, cuda graph: True, gen throughput (token/s): 503.60, #queue-req: 0
+11:46:41
+[2026-08-13 03:46:41 ATTN_CP0 TP0] Decode batch, #running-req: 12, #token: 246912, token usage: 0.75, cuda graph: True, gen throughput (token/s): 503.60, #queue-req: 0
+11:46:41
+[2026-08-13 03:46:41] INFO:     172.28.90.46:40390 - "GET /health HTTP/1.1" 200 OK
+11:46:43
+[2026-08-13 03:46:43 ATTN_CP1 TP1] Decode batch, #running-req: 12, #token: 248128, token usage: 0.75, cuda graph: True, gen throughput (token/s): 497.60, #queue-req: 0
+11:46:43
+[2026-08-13 03:46:43 ATTN_CP4 TP4] Decode batch, #running-req: 12, #token: 248128, token usage: 0.75, cuda graph: True, gen throughput (token/s): 497.60, #queue-req: 0
+11:46:43
+[2026-08-13 03:46:43 ATTN_CP7 TP7] Decode batch, #running-req: 12, #token: 248128, token usage: 0.75, cuda graph: True, gen throughput (token/s): 497.60, #queue-req: 0
+11:46:43
+[2026-08-13 03:46:43 ATTN_CP6 TP6] Decode batch, #running-req: 12, #token: 248128, token usage: 0.75, cuda graph: True, gen throughput (token/s): 497.60, #queue-req: 0
+11:46:43
+[2026-08-13 03:46:43 ATTN_CP3 TP3] Decode batch, #running-req: 12, #token: 248128, token usage: 0.75, cuda graph: True, gen throughput (token/s): 497.60, #queue-req: 0
+11:46:43
+[2026-08-13 03:46:43 ATTN_CP5 TP5] Decode batch, #running-req: 12, #token: 248128, token usage: 0.75, cuda graph: True, gen throughput (token/s): 497.60, #queue-req: 0
+11:46:43
+[2026-08-13 03:46:43 ATTN_CP2 TP2] Decode batch, #running-req: 12, #token: 248128, token usage: 0.75, cuda graph: True, gen throughput (token/s): 497.60, #queue-req: 0
+11:46:43
+[2026-08-13 03:46:43 ATTN_CP0 TP0] Decode batch, #running-req: 12, #token: 248128, token usage: 0.75, cuda graph: True, gen throughput (token/s): 497.60, #queue-req: 0
+11:46:45
+[2026-08-13 03:46:45 ATTN_CP5 TP5] Prefill batch, #new-seq: 1, #new-token: 10880, #cached-token: 0, token usage: 0.07, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1637.22
+11:46:45
+[2026-08-13 03:46:45 ATTN_CP6 TP6] Prefill batch, #new-seq: 1, #new-token: 10880, #cached-token: 0, token usage: 0.07, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1637.21
+11:46:45
+[2026-08-13 03:46:45 ATTN_CP4 TP4] Prefill batch, #new-seq: 1, #new-token: 10880, #cached-token: 0, token usage: 0.07, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1637.21
+11:46:45
+[2026-08-13 03:46:45 ATTN_CP7 TP7] Prefill batch, #new-seq: 1, #new-token: 10880, #cached-token: 0, token usage: 0.07, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1637.21
+11:46:45
+[2026-08-13 03:46:45 ATTN_CP3 TP3] Prefill batch, #new-seq: 1, #new-token: 10880, #cached-token: 0, token usage: 0.07, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1637.22
+11:46:45
+[2026-08-13 03:46:45 ATTN_CP1 TP1] Prefill batch, #new-seq: 1, #new-token: 10880, #cached-token: 0, token usage: 0.07, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1637.21
+11:46:45
+[2026-08-13 03:46:45 ATTN_CP2 TP2] Prefill batch, #new-seq: 1, #new-token: 10880, #cached-token: 0, token usage: 0.07, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1637.21
+11:46:45
+[2026-08-13 03:46:45 ATTN_CP0 TP0] Prefill batch, #new-seq: 1, #new-token: 10880, #cached-token: 0, token usage: 0.07, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1637.17
+11:46:45
+[2026-08-13 03:46:45] INFO:     172.28.90.46:52178 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:45
+[2026-08-13 03:46:45] INFO:     172.28.90.46:40390 - "GET /health HTTP/1.1" 200 OK
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 13568, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 7, #pending-token: 253674, cuda graph: False, input throughput (token/s): 23528.51
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 13568, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 7, #pending-token: 253674, cuda graph: False, input throughput (token/s): 23529.16
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 13568, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 7, #pending-token: 253674, cuda graph: False, input throughput (token/s): 23526.00
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 13568, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 7, #pending-token: 253674, cuda graph: False, input throughput (token/s): 23526.18
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 13568, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 7, #pending-token: 253674, cuda graph: False, input throughput (token/s): 23525.35
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 13568, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 7, #pending-token: 253674, cuda graph: False, input throughput (token/s): 23527.57
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 13568, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 7, #pending-token: 253674, cuda graph: False, input throughput (token/s): 23525.03
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 13568, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 7, #pending-token: 253674, cuda graph: False, input throughput (token/s): 23526.00
+11:46:46
+[2026-08-13 03:46:46] INFO:     172.28.90.46:41780 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:46
+[2026-08-13 03:46:46] INFO:     172.28.90.46:41838 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 16256, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 5, #pending-token: 237483, cuda graph: False, input throughput (token/s): 24127.48
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 16256, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 5, #pending-token: 237483, cuda graph: False, input throughput (token/s): 24127.84
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 16256, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 5, #pending-token: 237483, cuda graph: False, input throughput (token/s): 24127.29
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 16256, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 5, #pending-token: 237483, cuda graph: False, input throughput (token/s): 24125.30
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 16256, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 5, #pending-token: 237483, cuda graph: False, input throughput (token/s): 24127.09
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 16256, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 5, #pending-token: 237483, cuda graph: False, input throughput (token/s): 24126.12
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 16256, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 5, #pending-token: 237483, cuda graph: False, input throughput (token/s): 24124.17
+11:46:46
+[2026-08-13 03:46:46 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 16256, #cached-token: 0, token usage: 0.17, #running-req: 3, #queue-req: 5, #pending-token: 237483, cuda graph: False, input throughput (token/s): 24124.72
+11:46:46
+[2026-08-13 03:46:46] INFO:     172.28.90.46:41798 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:46
+[2026-08-13 03:46:46] INFO:     172.28.90.46:41872 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:47
+[2026-08-13 03:46:47 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.22, #running-req: 5, #queue-req: 4, #pending-token: 221158, cuda graph: False, input throughput (token/s): 24132.25
+11:46:47
+[2026-08-13 03:46:47 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.22, #running-req: 5, #queue-req: 4, #pending-token: 221158, cuda graph: False, input throughput (token/s): 24130.59
+11:46:47
+[2026-08-13 03:46:47 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.22, #running-req: 5, #queue-req: 4, #pending-token: 221158, cuda graph: False, input throughput (token/s): 24132.98
+11:46:47
+[2026-08-13 03:46:47 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.22, #running-req: 5, #queue-req: 4, #pending-token: 221158, cuda graph: False, input throughput (token/s): 24129.35
+11:46:47
+[2026-08-13 03:46:47 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.22, #running-req: 5, #queue-req: 4, #pending-token: 221158, cuda graph: False, input throughput (token/s): 24131.21
+11:46:47
+[2026-08-13 03:46:47 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.22, #running-req: 5, #queue-req: 4, #pending-token: 221158, cuda graph: False, input throughput (token/s): 24129.23
+11:46:47
+[2026-08-13 03:46:47 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.22, #running-req: 5, #queue-req: 4, #pending-token: 221158, cuda graph: False, input throughput (token/s): 24128.04
+11:46:47
+[2026-08-13 03:46:47 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.22, #running-req: 5, #queue-req: 4, #pending-token: 221158, cuda graph: False, input throughput (token/s): 24134.55
+11:46:47
+[2026-08-13 03:46:47] INFO:     172.28.90.46:41840 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 204794, cuda graph: False, input throughput (token/s): 24079.82
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 204794, cuda graph: False, input throughput (token/s): 24079.66
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 204794, cuda graph: False, input throughput (token/s): 24080.49
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 204794, cuda graph: False, input throughput (token/s): 24078.84
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 204794, cuda graph: False, input throughput (token/s): 24081.69
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 204794, cuda graph: False, input throughput (token/s): 24080.73
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 204794, cuda graph: False, input throughput (token/s): 24079.24
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.27, #running-req: 6, #queue-req: 4, #pending-token: 204794, cuda graph: False, input throughput (token/s): 24079.03
+11:46:48
+[2026-08-13 03:46:48] INFO:     172.28.90.46:41814 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP6 TP6] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 188410, cuda graph: False, input throughput (token/s): 23994.60
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP5 TP5] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 188410, cuda graph: False, input throughput (token/s): 23994.45
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP7 TP7] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 188410, cuda graph: False, input throughput (token/s): 23994.82
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP4 TP4] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 188410, cuda graph: False, input throughput (token/s): 23994.80
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP3 TP3] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 188410, cuda graph: False, input throughput (token/s): 23994.34
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP1 TP1] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 188410, cuda graph: False, input throughput (token/s): 23993.50
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP2 TP2] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 188410, cuda graph: False, input throughput (token/s): 23994.83
+11:46:48
+[2026-08-13 03:46:48 ATTN_CP0 TP0] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.32, #running-req: 7, #queue-req: 3, #pending-token: 188410, cuda graph: False, input throughput (token/s): 23998.04
+11:46:49
+[2026-08-13 03:46:49 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 172078, cuda graph: False, input throughput (token/s): 23881.19
+11:46:49
+[2026-08-13 03:46:49 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 172078, cuda graph: False, input throughput (token/s): 23881.18
+11:46:49
+[2026-08-13 03:46:49 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 172078, cuda graph: False, input throughput (token/s): 23881.10
+11:46:49
+[2026-08-13 03:46:49 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 172078, cuda graph: False, input throughput (token/s): 23881.19
+11:46:49
+[2026-08-13 03:46:49 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 172078, cuda graph: False, input throughput (token/s): 23880.31
+11:46:49
+[2026-08-13 03:46:49 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 172078, cuda graph: False, input throughput (token/s): 23881.49
+11:46:49
+[2026-08-13 03:46:49 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 172078, cuda graph: False, input throughput (token/s): 23881.24
+11:46:49
+[2026-08-13 03:46:49 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.37, #running-req: 7, #queue-req: 3, #pending-token: 172078, cuda graph: False, input throughput (token/s): 23876.41
+11:46:49
+[2026-08-13 03:46:49] INFO:     172.28.90.46:41828 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:49
+[2026-08-13 03:46:49] INFO:     172.28.90.46:40390 - "GET /health HTTP/1.1" 200 OK
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP4 TP4] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 155694, cuda graph: False, input throughput (token/s): 23765.23
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP5 TP5] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 155694, cuda graph: False, input throughput (token/s): 23764.63
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP6 TP6] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 155694, cuda graph: False, input throughput (token/s): 23763.71
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP2 TP2] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 155694, cuda graph: False, input throughput (token/s): 23765.65
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP3 TP3] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 155694, cuda graph: False, input throughput (token/s): 23764.86
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP7 TP7] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 155694, cuda graph: False, input throughput (token/s): 23764.34
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP1 TP1] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 155694, cuda graph: False, input throughput (token/s): 23763.65
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP0 TP0] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.42, #running-req: 8, #queue-req: 2, #pending-token: 155694, cuda graph: False, input throughput (token/s): 23767.37
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 2, #pending-token: 139371, cuda graph: False, input throughput (token/s): 23765.85
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 2, #pending-token: 139371, cuda graph: False, input throughput (token/s): 23765.31
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 2, #pending-token: 139371, cuda graph: False, input throughput (token/s): 23764.22
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 2, #pending-token: 139371, cuda graph: False, input throughput (token/s): 23764.46
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 2, #pending-token: 139371, cuda graph: False, input throughput (token/s): 23764.66
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 2, #pending-token: 139371, cuda graph: False, input throughput (token/s): 23765.25
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 2, #pending-token: 139371, cuda graph: False, input throughput (token/s): 23764.44
+11:46:50
+[2026-08-13 03:46:50 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.47, #running-req: 8, #queue-req: 2, #pending-token: 139371, cuda graph: False, input throughput (token/s): 23761.71
+11:46:50
+[2026-08-13 03:46:50] INFO:     172.28.90.46:41856 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:51
+[2026-08-13 03:46:51 ATTN_CP6 TP6] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.52, #running-req: 9, #queue-req: 2, #pending-token: 122987, cuda graph: False, input throughput (token/s): 23853.31
+11:46:51
+[2026-08-13 03:46:51 ATTN_CP7 TP7] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.52, #running-req: 9, #queue-req: 2, #pending-token: 122987, cuda graph: False, input throughput (token/s): 23853.86
+11:46:51
+[2026-08-13 03:46:51 ATTN_CP5 TP5] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.52, #running-req: 9, #queue-req: 2, #pending-token: 122987, cuda graph: False, input throughput (token/s): 23851.99
+11:46:51
+[2026-08-13 03:46:51 ATTN_CP1 TP1] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.52, #running-req: 9, #queue-req: 2, #pending-token: 122987, cuda graph: False, input throughput (token/s): 23852.82
+11:46:51
+[2026-08-13 03:46:51 ATTN_CP2 TP2] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.52, #running-req: 9, #queue-req: 2, #pending-token: 122987, cuda graph: False, input throughput (token/s): 23850.78
+11:46:51
+[2026-08-13 03:46:51 ATTN_CP3 TP3] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.52, #running-req: 9, #queue-req: 2, #pending-token: 122987, cuda graph: False, input throughput (token/s): 23850.86
+11:46:51
+[2026-08-13 03:46:51 ATTN_CP4 TP4] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.52, #running-req: 9, #queue-req: 2, #pending-token: 122987, cuda graph: False, input throughput (token/s): 23850.72
+11:46:51
+[2026-08-13 03:46:51 ATTN_CP0 TP0] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.52, #running-req: 9, #queue-req: 2, #pending-token: 122987, cuda graph: False, input throughput (token/s): 23856.90
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP4 TP4] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 106603, cuda graph: False, input throughput (token/s): 23389.51
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP5 TP5] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 106603, cuda graph: False, input throughput (token/s): 23387.83
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP3 TP3] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 106603, cuda graph: False, input throughput (token/s): 23388.94
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP2 TP2] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 106603, cuda graph: False, input throughput (token/s): 23387.02
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP6 TP6] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 106603, cuda graph: False, input throughput (token/s): 23385.27
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP1 TP1] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 106603, cuda graph: False, input throughput (token/s): 23385.71
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP7 TP7] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 106603, cuda graph: False, input throughput (token/s): 23382.06
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP0 TP0] Prefill batch, #new-seq: 1, #new-token: 16384, #cached-token: 0, token usage: 0.57, #running-req: 9, #queue-req: 1, #pending-token: 106603, cuda graph: False, input throughput (token/s): 23385.30
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.67, #running-req: 9, #queue-req: 1, #pending-token: 90226, cuda graph: False, input throughput (token/s): 23498.93
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.67, #running-req: 9, #queue-req: 1, #pending-token: 90226, cuda graph: False, input throughput (token/s): 23496.78
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.67, #running-req: 9, #queue-req: 1, #pending-token: 90226, cuda graph: False, input throughput (token/s): 23498.68
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.67, #running-req: 9, #queue-req: 1, #pending-token: 90226, cuda graph: False, input throughput (token/s): 23497.01
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.67, #running-req: 9, #queue-req: 1, #pending-token: 90226, cuda graph: False, input throughput (token/s): 23496.80
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.67, #running-req: 9, #queue-req: 1, #pending-token: 90226, cuda graph: False, input throughput (token/s): 23500.96
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.67, #running-req: 9, #queue-req: 1, #pending-token: 90226, cuda graph: False, input throughput (token/s): 23497.35
+11:46:52
+[2026-08-13 03:46:52 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.67, #running-req: 9, #queue-req: 1, #pending-token: 90226, cuda graph: False, input throughput (token/s): 23494.43
+11:46:52
+[2026-08-13 03:46:52] INFO:     172.28.90.46:41782 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:54
+[2026-08-13 03:46:54 ATTN_CP4 TP4] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.77, #running-req: 10, #queue-req: 0, #pending-token: 57458, cuda graph: False, input throughput (token/s): 24408.48
+11:46:54
+[2026-08-13 03:46:54 ATTN_CP6 TP6] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.77, #running-req: 10, #queue-req: 0, #pending-token: 57458, cuda graph: False, input throughput (token/s): 24408.63
+11:46:54
+[2026-08-13 03:46:54 ATTN_CP7 TP7] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.77, #running-req: 10, #queue-req: 0, #pending-token: 57458, cuda graph: False, input throughput (token/s): 24409.33
+11:46:54
+[2026-08-13 03:46:54 ATTN_CP2 TP2] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.77, #running-req: 10, #queue-req: 0, #pending-token: 57458, cuda graph: False, input throughput (token/s): 24408.45
+11:46:54
+[2026-08-13 03:46:54 ATTN_CP1 TP1] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.77, #running-req: 10, #queue-req: 0, #pending-token: 57458, cuda graph: False, input throughput (token/s): 24409.53
+11:46:54
+[2026-08-13 03:46:54 ATTN_CP3 TP3] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.77, #running-req: 10, #queue-req: 0, #pending-token: 57458, cuda graph: False, input throughput (token/s): 24408.64
+11:46:54
+[2026-08-13 03:46:54 ATTN_CP5 TP5] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.77, #running-req: 10, #queue-req: 0, #pending-token: 57458, cuda graph: False, input throughput (token/s): 24407.36
+11:46:54
+[2026-08-13 03:46:54 ATTN_CP0 TP0] Prefill batch, #new-seq: 1, #new-token: 32768, #cached-token: 0, token usage: 0.77, #running-req: 10, #queue-req: 0, #pending-token: 57458, cuda graph: False, input throughput (token/s): 24409.17
+11:46:55
+[2026-08-13 03:46:55 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.84, #running-req: 10, #queue-req: 0, #pending-token: 24706, cuda graph: False, input throughput (token/s): 24404.24
+11:46:55
+[2026-08-13 03:46:55 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.84, #running-req: 10, #queue-req: 0, #pending-token: 24706, cuda graph: False, input throughput (token/s): 24402.94
+11:46:55
+[2026-08-13 03:46:55 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.84, #running-req: 10, #queue-req: 0, #pending-token: 24706, cuda graph: False, input throughput (token/s): 24402.75
+11:46:55
+[2026-08-13 03:46:55 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.84, #running-req: 10, #queue-req: 0, #pending-token: 24706, cuda graph: False, input throughput (token/s): 24402.64
+11:46:55
+[2026-08-13 03:46:55 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.84, #running-req: 10, #queue-req: 0, #pending-token: 24706, cuda graph: False, input throughput (token/s): 24402.76
+11:46:55
+[2026-08-13 03:46:55 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.84, #running-req: 10, #queue-req: 0, #pending-token: 24706, cuda graph: False, input throughput (token/s): 24402.75
+11:46:55
+[2026-08-13 03:46:55 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.84, #running-req: 10, #queue-req: 0, #pending-token: 24706, cuda graph: False, input throughput (token/s): 24402.42
+11:46:55
+[2026-08-13 03:46:55 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 32768, #cached-token: 0, token usage: 0.84, #running-req: 10, #queue-req: 0, #pending-token: 24706, cuda graph: False, input throughput (token/s): 24402.51
+11:46:55
+[2026-08-13 03:46:55] INFO:     172.28.90.46:41864 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:56
+[2026-08-13 03:46:56 ATTN_CP5 TP5] Prefill batch, #new-seq: 1, #new-token: 24768, #cached-token: 0, token usage: 0.84, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23722.74
+11:46:56
+[2026-08-13 03:46:56 ATTN_CP7 TP7] Prefill batch, #new-seq: 1, #new-token: 24768, #cached-token: 0, token usage: 0.84, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23723.04
+11:46:56
+[2026-08-13 03:46:56 ATTN_CP6 TP6] Prefill batch, #new-seq: 1, #new-token: 24768, #cached-token: 0, token usage: 0.84, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23723.00
+11:46:56
+[2026-08-13 03:46:56 ATTN_CP4 TP4] Prefill batch, #new-seq: 1, #new-token: 24768, #cached-token: 0, token usage: 0.84, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23722.65
+11:46:56
+[2026-08-13 03:46:56 ATTN_CP3 TP3] Prefill batch, #new-seq: 1, #new-token: 24768, #cached-token: 0, token usage: 0.84, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23722.53
+11:46:56
+[2026-08-13 03:46:56 ATTN_CP2 TP2] Prefill batch, #new-seq: 1, #new-token: 24768, #cached-token: 0, token usage: 0.84, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23722.52
+11:46:56
+[2026-08-13 03:46:56 ATTN_CP1 TP1] Prefill batch, #new-seq: 1, #new-token: 24768, #cached-token: 0, token usage: 0.84, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23722.95
+11:46:56
+[2026-08-13 03:46:56 ATTN_CP0 TP0] Prefill batch, #new-seq: 1, #new-token: 24768, #cached-token: 0, token usage: 0.84, #running-req: 11, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 23727.19
+11:46:56
+[2026-08-13 03:46:56] INFO:     172.28.90.46:41850 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:46:57
+[2026-08-13 03:46:57 ATTN_CP7 TP7] Decode batch, #running-req: 12, #token: 278976, token usage: 0.84, cuda graph: True, gen throughput (token/s): 85.33, #queue-req: 0
+11:46:57
+[2026-08-13 03:46:57 ATTN_CP6 TP6] Decode batch, #running-req: 12, #token: 278976, token usage: 0.84, cuda graph: True, gen throughput (token/s): 85.33, #queue-req: 0
+11:46:57
+[2026-08-13 03:46:57 ATTN_CP5 TP5] Decode batch, #running-req: 12, #token: 278976, token usage: 0.84, cuda graph: True, gen throughput (token/s): 85.33, #queue-req: 0
+11:46:57
+[2026-08-13 03:46:57 ATTN_CP2 TP2] Decode batch, #running-req: 12, #token: 278976, token usage: 0.84, cuda graph: True, gen throughput (token/s): 85.33, #queue-req: 0
+11:46:57
+[2026-08-13 03:46:57 ATTN_CP4 TP4] Decode batch, #running-req: 12, #token: 278976, token usage: 0.84, cuda graph: True, gen throughput (token/s): 85.33, #queue-req: 0
+11:46:57
+[2026-08-13 03:46:57 ATTN_CP3 TP3] Decode batch, #running-req: 12, #token: 278976, token usage: 0.84, cuda graph: True, gen throughput (token/s): 85.33, #queue-req: 0
+11:46:57
+[2026-08-13 03:46:57 ATTN_CP1 TP1] Decode batch, #running-req: 12, #token: 278976, token usage: 0.84, cuda graph: True, gen throughput (token/s): 85.33, #queue-req: 0
+11:46:57
+[2026-08-13 03:46:57 ATTN_CP0 TP0] Decode batch, #running-req: 12, #token: 278976, token usage: 0.84, cuda graph: True, gen throughput (token/s): 85.33, #queue-req: 0
+11:46:58
+[2026-08-13 03:46:58] INFO:     172.28.90.46:48728 - "GET /health HTTP/1.1" 200 OK
+11:47:00
+[2026-08-13 03:47:00 ATTN_CP1 TP1] Decode batch, #running-req: 12, #token: 280320, token usage: 0.85, cuda graph: True, gen throughput (token/s): 497.59, #queue-req: 0
+11:47:00
+[2026-08-13 03:47:00 ATTN_CP3 TP3] Decode batch, #running-req: 12, #token: 280320, token usage: 0.85, cuda graph: True, gen throughput (token/s): 497.60, #queue-req: 0
+11:47:00
+[2026-08-13 03:47:00 ATTN_CP7 TP7] Decode batch, #running-req: 12, #token: 280320, token usage: 0.85, cuda graph: True, gen throughput (token/s): 497.59, #queue-req: 0
+11:47:00
+[2026-08-13 03:47:00 ATTN_CP2 TP2] Decode batch, #running-req: 12, #token: 280320, token usage: 0.85, cuda graph: True, gen throughput (token/s): 497.59, #queue-req: 0
+11:47:00
+[2026-08-13 03:47:00 ATTN_CP6 TP6] Decode batch, #running-req: 12, #token: 280320, token usage: 0.85, cuda graph: True, gen throughput (token/s): 497.59, #queue-req: 0
+11:47:00
+[2026-08-13 03:47:00 ATTN_CP4 TP4] Decode batch, #running-req: 12, #token: 280320, token usage: 0.85, cuda graph: True, gen throughput (token/s): 497.59, #queue-req: 0
+11:47:00
+[2026-08-13 03:47:00 ATTN_CP5 TP5] Decode batch, #running-req: 12, #token: 280320, token usage: 0.85, cuda graph: True, gen throughput (token/s): 497.59, #queue-req: 0
+11:47:00
+[2026-08-13 03:47:00 ATTN_CP0 TP0] Decode batch, #running-req: 12, #token: 280320, token usage: 0.85, cuda graph: True, gen throughput (token/s): 497.59, #queue-req: 0
+11:47:02
+[2026-08-13 03:47:02 ATTN_CP4 TP4] Decode batch, #running-req: 12, #token: 0, token usage: 0.00, cuda graph: True, gen throughput (token/s): 495.23, #queue-req: 0
+11:47:02
+[2026-08-13 03:47:02 ATTN_CP3 TP3] Decode batch, #running-req: 12, #token: 0, token usage: 0.00, cuda graph: True, gen throughput (token/s): 495.22, #queue-req: 0
+11:47:02
+[2026-08-13 03:47:02 ATTN_CP2 TP2] Decode batch, #running-req: 12, #token: 0, token usage: 0.00, cuda graph: True, gen throughput (token/s): 495.23, #queue-req: 0
+11:47:02
+[2026-08-13 03:47:02 ATTN_CP5 TP5] Decode batch, #running-req: 12, #token: 0, token usage: 0.00, cuda graph: True, gen throughput (token/s): 495.22, #queue-req: 0
+11:47:02
+[2026-08-13 03:47:02 ATTN_CP6 TP6] Decode batch, #running-req: 12, #token: 0, token usage: 0.00, cuda graph: True, gen throughput (token/s): 495.22, #queue-req: 0
+11:47:02
+[2026-08-13 03:47:02 ATTN_CP7 TP7] Decode batch, #running-req: 12, #token: 0, token usage: 0.00, cuda graph: True, gen throughput (token/s): 495.20, #queue-req: 0
+11:47:02
+[2026-08-13 03:47:02 ATTN_CP1 TP1] Decode batch, #running-req: 12, #token: 0, token usage: 0.00, cuda graph: True, gen throughput (token/s): 495.19, #queue-req: 0
+11:47:02
+[2026-08-13 03:47:02 ATTN_CP0 TP0] Decode batch, #running-req: 12, #token: 0, token usage: 0.00, cuda graph: True, gen throughput (token/s): 495.21, #queue-req: 0
+11:47:02
+[2026-08-13 03:47:02] INFO:     172.28.90.46:48728 - "GET /health HTTP/1.1" 200 OK
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP1 TP1] Prefill batch, #new-seq: 1, #new-token: 11648, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1746.20
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP2 TP2] Prefill batch, #new-seq: 1, #new-token: 11648, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1746.19
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP6 TP6] Prefill batch, #new-seq: 1, #new-token: 11648, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1746.19
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP7 TP7] Prefill batch, #new-seq: 1, #new-token: 11648, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1746.19
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP3 TP3] Prefill batch, #new-seq: 1, #new-token: 11648, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1746.19
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP4 TP4] Prefill batch, #new-seq: 1, #new-token: 11648, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1746.18
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP5 TP5] Prefill batch, #new-seq: 1, #new-token: 11648, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1746.18
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP0 TP0] Prefill batch, #new-seq: 1, #new-token: 11648, #cached-token: 0, token usage: 0.08, #running-req: 0, #queue-req: 9, #pending-token: 0, cuda graph: False, input throughput (token/s): 1746.15
+11:47:03
+[2026-08-13 03:47:03] INFO:     172.28.90.46:52178 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 8, #pending-token: 149361, cuda graph: False, input throughput (token/s): 24140.80
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 8, #pending-token: 149361, cuda graph: False, input throughput (token/s): 24140.09
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 8, #pending-token: 149361, cuda graph: False, input throughput (token/s): 24140.82
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 8, #pending-token: 149361, cuda graph: False, input throughput (token/s): 24139.89
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 8, #pending-token: 149361, cuda graph: False, input throughput (token/s): 24140.33
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 8, #pending-token: 149361, cuda graph: False, input throughput (token/s): 24138.96
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 8, #pending-token: 149361, cuda graph: False, input throughput (token/s): 24138.81
+11:47:03
+[2026-08-13 03:47:03 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 16384, #cached-token: 0, token usage: 0.12, #running-req: 1, #queue-req: 8, #pending-token: 149361, cuda graph: False, input throughput (token/s): 24137.76
+11:47:03
+[2026-08-13 03:47:03] INFO:     172.28.90.46:41780 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:47:04
+[2026-08-13 03:47:04 ATTN_CP4 TP4] Prefill batch, #new-seq: 2, #new-token: 10432, #cached-token: 0, token usage: 0.17, #running-req: 2, #queue-req: 6, #pending-token: 138957, cuda graph: False, input throughput (token/s): 22840.67
+11:47:04
+[2026-08-13 03:47:04 ATTN_CP5 TP5] Prefill batch, #new-seq: 2, #new-token: 10432, #cached-token: 0, token usage: 0.17, #running-req: 2, #queue-req: 6, #pending-token: 138957, cuda graph: False, input throughput (token/s): 22838.38
+11:47:04
+[2026-08-13 03:47:04 ATTN_CP6 TP6] Prefill batch, #new-seq: 2, #new-token: 10432, #cached-token: 0, token usage: 0.17, #running-req: 2, #queue-req: 6, #pending-token: 138957, cuda graph: False, input throughput (token/s): 22837.86
+11:47:04
+[2026-08-13 03:47:04 ATTN_CP7 TP7] Prefill batch, #new-seq: 2, #new-token: 10432, #cached-token: 0, token usage: 0.17, #running-req: 2, #queue-req: 6, #pending-token: 138957, cuda graph: False, input throughput (token/s): 22840.07
+11:47:04
+[2026-08-13 03:47:04 ATTN_CP1 TP1] Prefill batch, #new-seq: 2, #new-token: 10432, #cached-token: 0, token usage: 0.17, #running-req: 2, #queue-req: 6, #pending-token: 138957, cuda graph: False, input throughput (token/s): 22838.38
+11:47:04
+[2026-08-13 03:47:04 ATTN_CP2 TP2] Prefill batch, #new-seq: 2, #new-token: 10432, #cached-token: 0, token usage: 0.17, #running-req: 2, #queue-req: 6, #pending-token: 138957, cuda graph: False, input throughput (token/s): 22837.63
+11:47:04
+[2026-08-13 03:47:04 ATTN_CP3 TP3] Prefill batch, #new-seq: 2, #new-token: 10432, #cached-token: 0, token usage: 0.17, #running-req: 2, #queue-req: 6, #pending-token: 138957, cuda graph: False, input throughput (token/s): 22838.58
+11:47:04
+[2026-08-13 03:47:04 ATTN_CP0 TP0] Prefill batch, #new-seq: 2, #new-token: 10432, #cached-token: 0, token usage: 0.17, #running-req: 2, #queue-req: 6, #pending-token: 138957, cuda graph: False, input throughput (token/s): 22839.26
+11:47:04
+[2026-08-13 03:47:04] INFO:     172.28.90.46:41838 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+11:47:04
+[2026-08-13 03:47:04] INFO:     172.28.90.46:41850 - "POST /v1/chat/completions HTTP/1.1" 200 OK
