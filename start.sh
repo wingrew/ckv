@@ -266,7 +266,7 @@ start_sglang() {
     --chunked-prefill-size 32768 \
     --max-prefill-tokens 32768 \
     --schedule-policy sjf \
-    --sjf-multi-request-prefill-tokens 20000 \
+    --sjf-multi-request-prefill-tokens 16384 \
     --sjf-multi-request-prefill-threshold 2 \
     --sjf-multi-request-prefill-max-requests 2 \
     --sjf-multi-request-prefill-max-running-requests 10 \
@@ -390,8 +390,10 @@ with urllib.request.urlopen(flush, timeout=60) as response:
 PY
 fi
 
-echo "SGLang rank=${RANK} is ready"
-sleep 60
+if (( RANK == 0 )); then
+  sleep 60
+  echo "SGLang rank=${RANK} is ready"
+fi
 
 if (( RANK == 1 )); then
   LOCAL_IP="$(resolve_local_ip)"
