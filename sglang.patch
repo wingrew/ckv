@@ -1,0 +1,96 @@
+diff --git a/scheduler.py b/scheduler.py
+index 0342c53..cff8733 100644
+--- a/scheduler.py
++++ b/scheduler.py
+@@ -986,6 +986,7 @@ class Scheduler(
+         self.decode_drain_master_needs_rebuild = False
+         self._decode_drain_last_selection = None
+         self._decode_drain_warned_incompatible = False
++        self._decode_drain_subset_steps = 0
+ 
+     def init_chunked_prefill(self):
+         self.chunked_prefill_size = self.server_args.chunked_prefill_size
+@@ -2743,6 +2744,7 @@ class Scheduler(
+         self, running_batch: ScheduleBatch
+     ) -> Optional[ScheduleBatch]:
+         if not self.server_args.enable_decode_drain:
++            self._decode_drain_subset_steps = 0
+             return None
+ 
+         initial_bs = running_batch.batch_size()
+@@ -2754,6 +2756,7 @@ class Scheduler(
+             < self.server_args.decode_drain_min_batch_size
+         ):
+             self._decode_drain_last_selection = None
++            self._decode_drain_subset_steps = 0
+             return None
+ 
+         if not all(
+@@ -2767,6 +2770,16 @@ class Scheduler(
+                     "or repetition/frequency/presence penalties."
+                 )
+                 self._decode_drain_warned_incompatible = True
++            self._decode_drain_subset_steps = 0
++            return None
++
++        fairness_interval = self.server_args.decode_drain_fairness_interval
++        if (
++            fairness_interval > 0
++            and self._decode_drain_subset_steps >= fairness_interval
++        ):
++            self._decode_drain_subset_steps = 0
++            self._decode_drain_last_selection = None
+             return None
+ 
+         max_requests = min(
+@@ -2786,6 +2799,7 @@ class Scheduler(
+         # Retraction needs to operate on the complete running batch. Fall back to
+         # the normal path when even the small drain subset cannot allocate a step.
+         if not running_batch.check_decode_mem(selected_indices=selected_indices):
++            self._decode_drain_subset_steps = 0
+             return None
+ 
+         if self.enable_hierarchical_cache:
+@@ -2796,6 +2810,7 @@ class Scheduler(
+         self._restore_decode_drain_min_new_token_counts(drain_batch)
+         drain_batch.prepare_for_decode()
+         self.decode_drain_master_needs_rebuild = True
++        self._decode_drain_subset_steps += 1
+ 
+         selection = tuple(req.rid for req in selected_reqs)
+         if selection != self._decode_drain_last_selection:
+@@ -4827,4 +4842,4 @@ def run_scheduler_process(
+             # Graceful path only: on the exception path the GPU may be wedged
+             # and the synchronize() in destroy() could itself hang.
+             if scheduler.gracefully_exit:
+-                scheduler.release_host_resources()
+\ No newline at end of file
++                scheduler.release_host_resources()
+diff --git a/server_args.py b/server_args.py
+index e7e2c22..e55ce65 100644
+--- a/server_args.py
++++ b/server_args.py
+@@ -902,6 +902,11 @@ class ServerArgs:
+         int,
+         "Minimum number of running requests required to activate decode draining.",
+     ] = 8
++    decode_drain_fairness_interval: A[
++        int,
++        "Run one normal full-batch decode after this many drain-subset steps so "
++        "deferred requests keep streaming. Set to 0 to disable fairness steps.",
++    ] = 16
+     enable_prefill_priority: A[
+         bool,
+         "Prioritize prefill over decode globally. With DP attention, decode-only "
+@@ -7643,6 +7648,9 @@ class ServerArgs:
+         assert self.decode_drain_min_batch_size > 0, (
+             "--decode-drain-min-batch-size must be positive"
+         )
++        assert self.decode_drain_fairness_interval >= 0, (
++            "--decode-drain-fairness-interval must be non-negative"
++        )
+         if self.enable_decode_drain:
+             assert self.disable_overlap_schedule, (
+                 "--enable-decode-drain requires --disable-overlap-schedule"
+@@ -8460,4 +8468,4 @@ class PortArgs:
+                     dist_init_host, load_c

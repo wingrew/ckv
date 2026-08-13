@@ -888,6 +888,25 @@ class ServerArgs:
         bool,
         "Enabling mixing prefill and decode in a batch when using chunked prefill.",
     ] = False
+    enable_decode_drain: A[
+        bool,
+        "Decode only the requests closest to completion once a running batch is "
+        "large enough. This releases request slots progressively instead of in waves.",
+    ] = False
+    decode_drain_max_requests: A[
+        int,
+        "Maximum number of requests advanced by each decode step while decode "
+        "draining is active.",
+    ] = 2
+    decode_drain_min_batch_size: A[
+        int,
+        "Minimum number of running requests required to activate decode draining.",
+    ] = 8
+    decode_drain_fairness_interval: A[
+        int,
+        "Run one normal full-batch decode after this many drain-subset steps so "
+        "deferred requests keep streaming. Set to 0 to disable fairness steps.",
+    ] = 16
     enable_prefill_priority: A[
         bool,
         "Prioritize prefill over decode globally. With DP attention, decode-only "
@@ -7622,6 +7641,35 @@ class ServerArgs:
             "set of padded bucket sizes, causing engine initialisation to stall for many minutes. "
             "Remove --disable-cuda-graph-padding or --enable-torch-compile."
         )
+
+        assert self.decode_drain_max_requests > 0, (
+            "--decode-drain-max-requests must be positive"
+        )
+        assert self.decode_drain_min_batch_size > 0, (
+            "--decode-drain-min-batch-size must be positive"
+        )
+        assert self.decode_drain_fairness_interval >= 0, (
+            "--decode-drain-fairness-interval must be non-negative"
+        )
+        if self.enable_decode_drain:
+            assert self.disable_overlap_schedule, (
+                "--enable-decode-drain requires --disable-overlap-schedule"
+            )
+            assert not self.enable_mixed_chunk, (
+                "--enable-decode-drain is not compatible with --enable-mixed-chunk"
+            )
+            assert self.speculative_algorithm is None, (
+                "--enable-decode-drain is not compatible with speculative decoding"
+            )
+            assert not self.enable_dp_attention, (
+                "--enable-decode-drain is not compatible with DP attention"
+            )
+            assert not self.enable_hisparse, (
+                "--enable-decode-drain is not compatible with HiSparse"
+            )
+            assert self.disaggregation_mode == "null", (
+                "--enable-decode-drain is not compatible with disaggregation"
+            )
 
         if self.pp_size > 1:
             assert (

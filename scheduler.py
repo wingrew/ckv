@@ -242,6 +242,9 @@ from sglang.srt.parser.reasoning_parser import ReasoningParser
 from sglang.srt.platforms import current_platform
 from sglang.srt.plugins import load_plugins
 from sglang.srt.runtime_context import get_parallel, get_server_args
+from sglang.srt.sampling.penaltylib.min_new_tokens import (
+    BatchedMinNewTokensPenalizer,
+)
 from sglang.srt.sampling.sampling_batch_info import SamplingBatchInfo
 from sglang.srt.sampling.sampling_params import TOP_K_ALL
 from sglang.srt.server_args import PortArgs, ServerArgs
@@ -980,7 +983,11 @@ class Scheduler(
         self.session_controller = SessionController(self.tree_cache)
         self.forward_sleep_time = None
         self._engine_paused = False
-
+        self.decode_drain_master_needs_rebuild = False
+        self._decode_drain_last_selection = None
+        self._decode_drain_warned_incompatible = False
+        self._decode_drain_subset_steps = 0
+        
     def init_chunked_prefill(self):
         self.chunked_prefill_size = self.server_args.chunked_prefill_size
         uses_transformers_backend = (
@@ -2640,8 +2647,8 @@ class Scheduler(
         self.ipc_channels.send_to_tokenizer.send_output(AbortReq(rid=req.rid), req)
         logger.debug(f"Abort chunked prefill request. {req.rid=}")
 
-    def _build_hisparse_decode_batch(self, reqs):
-        """Build a ScheduleBatch for hisparse requests transitioning from staging to decode."""
+    def _build_decode_batch_from_reqs(self, reqs):
+        """Rebuild decode metadata around requests whose KV remains allocated."""
         device = self.device
 
         batch = ScheduleBatch.init_new(
@@ -2680,14 +2687,155 @@ class Scheduler(
         batch.sampling_info = SamplingBatchInfo.from_schedule_batch(
             batch, self.model_config.vocab_size
         )
-        # todo hisparse, maybe other info to contain for the new batch
         return batch
+
+    def _build_hisparse_decode_batch(self, reqs):
+        """Build a batch for HiSparse requests transitioning to decode."""
+        return self._build_decode_batch_from_reqs(reqs)
+
+    @staticmethod
+    def _decode_drain_req_is_compatible(req: Req) -> bool:
+        sampling_params = req.sampling_params
+        return (
+            req.grammar is None
+            and req.custom_logit_processor is None
+            and not req.return_logprob
+            and sampling_params.frequency_penalty == 0.0
+            and sampling_params.presence_penalty == 0.0
+            and sampling_params.repetition_penalty == 1.0
+        )
+
+    @staticmethod
+    def _restore_decode_drain_min_new_token_counts(batch: ScheduleBatch) -> None:
+        penalizer = batch.sampling_info.penalizer_orchestrator.penalizers.get(
+            BatchedMinNewTokensPenalizer
+        )
+        if penalizer is None or not penalizer.is_prepared():
+            return
+
+        # prepare_for_decode() accounts for the latest output token. Seed the
+        # rebuilt penalizer with all earlier tokens so min_tokens remains exact.
+        penalizer.len_output_tokens = torch.tensor(
+            [max(len(req.output_ids) - 1, 0) for req in batch.reqs],
+            dtype=torch.int32,
+            device=batch.device,
+        ).unsqueeze(1)
+
+    def _rebuild_decode_drain_master(
+        self, running_batch: ScheduleBatch
+    ) -> ScheduleBatch:
+        if not self.decode_drain_master_needs_rebuild:
+            return running_batch
+
+        old_batch_size = running_batch.batch_size()
+        reqs = [req for req in running_batch.reqs if not req.finished()]
+        self.decode_drain_master_needs_rebuild = False
+        if not reqs:
+            return ScheduleBatch(reqs=[], batch_is_full=False)
+
+        rebuilt = self._build_decode_batch_from_reqs(reqs)
+        self._restore_decode_drain_min_new_token_counts(rebuilt)
+        rebuilt.batch_is_full = (
+            running_batch.batch_is_full and len(reqs) == old_batch_size
+        )
+        return rebuilt
+
+    def _get_decode_drain_batch(
+        self, running_batch: ScheduleBatch
+    ) -> Optional[ScheduleBatch]:
+        if not self.server_args.enable_decode_drain:
+            self._decode_drain_subset_steps = 0
+            return None
+
+        initial_bs = running_batch.batch_size()
+        running_batch.filter_batch()
+        if running_batch.batch_size() < initial_bs:
+            running_batch.batch_is_full = False
+        if (
+            running_batch.batch_size()
+            < self.server_args.decode_drain_min_batch_size
+        ):
+            self._decode_drain_last_selection = None
+            self._decode_drain_subset_steps = 0
+            return None
+
+        if not all(
+            self._decode_drain_req_is_compatible(req)
+            for req in running_batch.reqs
+        ):
+            if not self._decode_drain_warned_incompatible:
+                logger.warning(
+                    "Decode drain is disabled for the current batch because a "
+                    "request uses grammar, logprobs, custom logits, "
+                    "or repetition/frequency/presence penalties."
+                )
+                self._decode_drain_warned_incompatible = True
+            self._decode_drain_subset_steps = 0
+            return None
+
+        fairness_interval = self.server_args.decode_drain_fairness_interval
+        if (
+            fairness_interval > 0
+            and self._decode_drain_subset_steps >= fairness_interval
+        ):
+            self._decode_drain_subset_steps = 0
+            self._decode_drain_last_selection = None
+            return None
+
+        max_requests = min(
+            self.server_args.decode_drain_max_requests,
+            running_batch.batch_size(),
+        )
+        selected_indices = sorted(
+            range(running_batch.batch_size()),
+            key=lambda index: (
+                running_batch.reqs[index].sampling_params.max_new_tokens
+                - len(running_batch.reqs[index].output_ids),
+                str(running_batch.reqs[index].rid),
+            ),
+        )[:max_requests]
+        selected_reqs = [running_batch.reqs[index] for index in selected_indices]
+
+        # Retraction needs to operate on the complete running batch. Fall back to
+        # the normal path when even the small drain subset cannot allocate a step.
+        if not running_batch.check_decode_mem(selected_indices=selected_indices):
+            self._decode_drain_subset_steps = 0
+            return None
+
+        if self.enable_hierarchical_cache:
+            self.tree_cache.flush_write_through_acks()
+        self.new_token_ratio_tracker.decay_step()
+
+        drain_batch = self._build_decode_batch_from_reqs(selected_reqs)
+        self._restore_decode_drain_min_new_token_counts(drain_batch)
+        drain_batch.prepare_for_decode()
+        self.decode_drain_master_needs_rebuild = True
+        self._decode_drain_subset_steps += 1
+
+        selection = tuple(req.rid for req in selected_reqs)
+        if selection != self._decode_drain_last_selection:
+            logger.info(
+                "Decode drain selected %d/%d requests: %s",
+                len(selected_reqs),
+                running_batch.batch_size(),
+                ", ".join(
+                    f"{req.rid}(remaining="
+                    f"{req.sampling_params.max_new_tokens - len(req.output_ids)})"
+                    for req in selected_reqs
+                ),
+            )
+            self._decode_drain_last_selection = selection
+
+        return drain_batch
 
     @scheduler_nvtx_method("scheduler.get_next_batch_to_run")
     def get_next_batch_to_run(
         self, running_batch: ScheduleBatch, last_batch: Optional[ScheduleBatch]
     ) -> NextBatchPlan:
         self.process_pending_chunked_abort()
+
+        if self.server_args.enable_decode_drain:
+            running_batch = self._rebuild_decode_drain_master(running_batch)
 
         if self.enable_fpm:
             self._fpm_batch_t0 = time.monotonic()
@@ -2799,8 +2947,12 @@ class Scheduler(
         else:
             # Run decode (skip for prefill-only batches)
             if not running_batch.is_empty() and not running_batch.is_prefill_only:
-                running_batch = self.update_running_batch(running_batch)
-                ret = running_batch if not running_batch.is_empty() else None
+                drain_batch = self._get_decode_drain_batch(running_batch)
+                if drain_batch is not None:
+                    ret = drain_batch
+                else:
+                    running_batch = self.update_running_batch(running_batch)
+                    ret = running_batch if not running_batch.is_empty() else None
             else:
                 ret = None
 

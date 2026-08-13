@@ -394,7 +394,6 @@ if (( RANK == 0 )); then
   sleep 60
   echo "SGLang rank=${RANK} is ready"
 fi
-
 if (( RANK == 1 )); then
   LOCAL_IP="$(resolve_local_ip)"
   LOCAL_URL_HOST="$(url_host "${LOCAL_IP}")"
